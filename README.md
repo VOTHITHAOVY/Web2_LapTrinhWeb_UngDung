@@ -1,30 +1,5 @@
-# 🛒 ĐỒ ÁN WEB BÁN HÀNG - E-COMMERCE
 
-> Đồ án môn học Lập trình web và ứng dụng nâng cao
-> 
-> Công nghệ: PHP, MySQL   
-> Môi trường: XAMPP
-
----
-
-## 📋 MỤC LỤC
-
-1. [Tính năng](#-tính-năng)
-2. [Công nghệ sử dụng](#-công-nghệ-sử-dụng)
-3. [Yêu cầu hệ thống](#-yêu-cầu-hệ-thống)
-4. [Cài đặt](#-cài-đặt)
-5. [Cấu trúc thư mục](#-cấu-trúc-thư-mục)
-6. [Hướng dẫn sử dụng](#-hướng-dẫn-sử-dụng)
-7. [Tài khoản mặc định](#-tài-khoản-mặc-định)
-8. [Chức năng chi tiết](#-chức-năng-chi-tiết)
-9. [Database Schema](#-database-schema)
-10. [Troubleshooting](#-troubleshooting)
-
----
-
-## ✨ TÍNH NĂNG
-
-### 👤 Người dùng (End-User) - 5.0 điểm
+### 👤 Người dùng (End-User)
 - ✅ Hiển thị sản phẩm theo phân loại
 - ✅ Hiển thị chi tiết sản phẩm
 - ✅ Tìm kiếm cơ bản (theo tên)
@@ -35,7 +10,7 @@
 - ✅ Thanh toán (chọn địa chỉ + hình thức thanh toán)
 - ✅ Xem lịch sử đơn hàng
 
-### 🔐 Quản trị viên (Admin) - 5.0 điểm
+### 🔐 Quản trị viên (Admin)
 - ✅ Đăng nhập/đăng xuất admin
 - ✅ Quản lý người dùng (thêm, sửa, khóa/mở)
 - ✅ Quản lý sản phẩm:
@@ -47,90 +22,13 @@
   - Lọc theo trạng thái/thời gian/địa điểm
 - ✅ Thống kê: Top 5 khách hàng mua nhiều nhất
 
-### 🎯 Yêu cầu khác - 2.0 điểm
+### 🎯 Yêu cầu khác 
 - ✅ Loại sản phẩm lưu riêng (quan hệ 1-n)
 - ✅ Giao diện Bootstrap 5 đẹp mắt
 - ✅ Responsive design
 
 ---
-
-## 🛠 CÔNG NGHỆ SỬ DỤNG
-
-| Công nghệ | Phiên bản | Mục đích |
-|-----------|-----------|----------|
-| PHP | 8.0+ | Backend logic |
-| MySQL | 5.7+ | Database |
-| Bootstrap | 5.3.0 | Frontend UI |
-| Font Awesome | 6.4.0 | Icons |
-| jQuery | 3.7.0 | JavaScript library |
-
----
-
-## 💻 YÊU CẦU HỆ THỐNG
-
-- **XAMPP** phiên bản 8.0 trở lên
-- **PHP** 8.0+
-- **MySQL** 5.7+
-- **Browser** hiện đại (Chrome, Firefox, Edge)
-- **Dung lượng**: ~50MB
-
----
-
-## 🚀 CÀI ĐẶT
-
-### Bước 1: Cài đặt XAMPP
-
-1. Download XAMPP từ: https://www.apachefriends.org/
-2. Cài đặt vào `C:\xampp`
-3. Khởi động **Apache** và **MySQL** trong XAMPP Control Panel
-
-### Bước 2: Tạo Database
-
-1. Truy cập phpMyAdmin: `http://localhost/phpmyadmin`
-2. Tạo database mới tên: `ecommerce_db`
-3. Import file SQL:
-   - Click vào database `ecommerce_db`
-   - Chọn tab **Import**
-   - Chọn file `database/ecommerce_db.sql`
-   - Click **Go**
-
-### Bước 3: Copy Project
-
-1. Copy toàn bộ thư mục project vào:
-   ```
-   C:\xampp\htdocs\ecommerce\
-   ```
-
-2. Cấu trúc sau khi copy:
-   ```
-   C:\xampp\htdocs\ecommerce\
-   ├── config/
-   ├── includes/
-   ├── assets/
-   ├── uploads/
-   ├── user/
-   ├── admin/
-   └── README.md
-   ```
-
-### Bước 4: Cấu hình Database (nếu cần)
-
-Mở file `config/database.php` và kiểm tra thông tin:
-
-```php
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');              // Để trống với XAMPP mặc định
-define('DB_NAME', 'ecommerce_db');
-```
-
-### Bước 5: Phân quyền thư mục Upload (Windows)
-
-1. Right-click thư mục `uploads/` → Properties
-2. Tab Security → Edit
-3. Chọn Users → Cho phép **Full Control**
-
-### Bước 6: Truy cập Website
+###  Truy cập Website
 
 **User (Người dùng):**
 ```
@@ -346,3 +244,4 @@ Password: customer123
 | Tính năng khác | Bonus | ✅ Responsive |
 
 ---
+
